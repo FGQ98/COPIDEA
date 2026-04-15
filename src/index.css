@@ -1,0 +1,60 @@
+/* COPIDEA — Estilos base
+   Estetica: instrumental sobria. Color solo para estado. */
+
+:root {
+  --green: #1D9E75;
+  --green-bg: #E1F5EE;
+  --yellow: #BA7517;
+  --yellow-bg: #FAEEDA;
+  --red: #E24B4A;
+  --red-bg: #FCEBEB;
+  --text: #1a1a1a;
+  --text-secondary: #666;
+  --text-hint: #999;
+  --bg: #FAFAF8;
+  --bg-card: #FFFFFF;
+  --border: #E8E6E1;
+  --border-hover: #D0CEC8;
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--border-hover);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
